@@ -1,14 +1,26 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Items {
     protected String name;
     protected String size;
-    protected double price;
+    protected double basePrice;
+    protected List<AddOn> addOn;
 
-    public Items(String name, String size, double price) {
+    public Items(String name, String size, double basePrice) {
         this.name = name;
         this.size = size;
-        this.price = price;
+        this.basePrice = basePrice;
+        this.addOn = new ArrayList<>();
+    }
+    public void addAddOn(AddOn addOn) {
+        this.addOn.add(addOn);
+    }
+    //Gets the total cost of add ons
+    public double addOnTotal() {
+        return addOn.stream()
+                .mapToDouble(AddOn::getPrice)
+                .sum();
     }
 
     public abstract double calculatePrice();

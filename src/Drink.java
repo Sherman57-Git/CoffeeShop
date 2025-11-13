@@ -6,7 +6,7 @@ public class Drink extends Items {
     private final List<AddOn> addOn = new ArrayList<>();
 
     public Drink(String name, String size, String milk, String flavors) {
-        super(name, size, milk, flavors);
+        super(name, size, basePrice(size));
         this.flavors = flavors;
     }
 
@@ -19,11 +19,11 @@ public class Drink extends Items {
         };
     }
         public void addAddOn (AddOn addOn) {
-            addOn.add(addOn);
+            this.addOn.add(addOn);
         }
         @Override
         public double calculatePrice() {
-            double total = price;
+            double total = basePrice;
             for (AddOn addOn : addOn) {
                 total += addOn.getPrice();
             }

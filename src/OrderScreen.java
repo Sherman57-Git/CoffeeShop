@@ -47,7 +47,7 @@ public class OrderScreen {
         String milk = scanner.next();
         System.out.println("Would you like it iced (y/n): ");
         boolean iced = scanner.nextLine().equalsIgnoreCase("y");
-        Coffee coffee = new Coffee(name ,size, milk ,iced,flavors);
+        Coffee coffee = new Coffee(name ,size, milk ,iced, flavors);
         //Add on for coffees
         System.out.print("Would you like to add extra add-ons? (y/n): ");
         if (scanner.nextLine().equalsIgnoreCase("y")) {

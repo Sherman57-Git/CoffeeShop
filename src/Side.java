@@ -4,6 +4,6 @@ public class Side extends Items {
     }
     @Override
     public double calculatePrice() {
-        return price;
+        return basePrice;
     }
 }

@@ -5,7 +5,7 @@ public class Coffee extends Items {
     private String milkType;
     private boolean isIced;
     private final List<AddOn> addOns = new ArrayList<>();
-    public Coffee(String name, String size, String milk, boolean iced, String flavors) {
+    public Coffee(String name, String size, String milkType, boolean isIced, String flavors) {
         super(name, size, basePrice(size));
         this.milkType = milkType;
         this.isIced = isIced;
