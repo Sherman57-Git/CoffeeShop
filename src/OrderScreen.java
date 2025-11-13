@@ -20,7 +20,7 @@ public class OrderScreen {
             int choice = scanner.nextInt();
             scanner.nextLine();
             switch(choice) {
-                case 1 -> addItem();
+                case 1 -> addCoffee();
                 case 2 -> addDrink();
                 case 3 -> addSide();
                 case 4 -> checkout();
@@ -35,7 +35,7 @@ public class OrderScreen {
         }
     }
     // ADDING COFFEE
-    private void addItem() {
+    private void addCoffee() {
         System.out.println("~~~ Coffee ~~~");
         System.out.println(" What kind of coffee would you like? Latte or Cappuccino? ");
         String name = scanner.nextLine();
@@ -47,9 +47,7 @@ public class OrderScreen {
         String milk = scanner.next();
         System.out.println("Would you like it iced (y/n): ");
         boolean iced = scanner.nextLine().equalsIgnoreCase("y");
-        Coffee coffee = new Coffee(name ,size, flavors, milk ,iced);
-        order.addItem(coffee);
-        System.out.println("Added: " + coffee.getDescription());
+        Coffee coffee = new Coffee(name ,size, milk ,iced,flavors);
         //Add on for coffees
         System.out.print("Would you like to add extra add-ons? (y/n): ");
         if (scanner.nextLine().equalsIgnoreCase("y")) {

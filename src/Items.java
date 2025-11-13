@@ -1,3 +1,5 @@
+import java.util.List;
+
 public abstract class Items {
     protected String name;
     protected String size;
@@ -8,8 +10,12 @@ public abstract class Items {
         this.size = size;
         this.price = price;
     }
+
     public abstract double calculatePrice();
     public String getDescription(){
         return size + "  " + name;
+    }
+
+    public void add(int i, List<Items> items) {
     }
 }

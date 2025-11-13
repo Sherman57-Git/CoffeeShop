@@ -5,12 +5,13 @@ public class Coffee extends Items {
     private String milkType;
     private boolean isIced;
     private final List<AddOn> addOns = new ArrayList<>();
-
-    public Coffee(String name, String size, double price, String milkType, boolean isIced) {
-        super(name, size, price);
+    public Coffee(String name, String size, String milk, boolean iced, String flavors) {
+        super(name, size, basePrice(size));
         this.milkType = milkType;
         this.isIced = isIced;
+        this.flavors = flavors;
     }
+
     private static double basePrice(String size) {
         return switch (size.toLowerCase()) {
             case "small" -> 5.00;
