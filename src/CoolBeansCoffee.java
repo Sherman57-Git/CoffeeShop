@@ -14,7 +14,7 @@ public class CoolBeansCoffee {
                 case 1 -> {
                     Order order = new Order();
                     OrderScreen orderSrceen = new OrderScreen(order);
-                    screen.start();
+                    orderSrceen.start();
                 }
                 case 0 -> {
                     System.out.println("Thank You! Goodbye!");
