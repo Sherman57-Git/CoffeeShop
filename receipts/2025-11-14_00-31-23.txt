@@ -1,0 +1,8 @@
+Cool Beans Coffee
+~~~~~~~~~~~~~~~~~~~~~~~
+Order Summary:
+- small  lattlatte + [Vanilla Cold Foam ($1.00)] (oat, Iced, vanilla) + [Vanilla Cold Foam ($1.00)] : $5.50
+- Regular  cookies : $1.50
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total: $7.00
+Date: 2025-11-14T00:31:23.995610

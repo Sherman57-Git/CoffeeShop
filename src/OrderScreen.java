@@ -56,7 +56,7 @@ public class OrderScreen {
                 System.out.println("\nChoose an add-on:");
                 System.out.println("1: Vanilla Cold Foam ($1.00)");
                 System.out.println("2: Whipped cream ($1.00)");
-                System.out.println("2: Extra Syrup ($0.50)");
+                System.out.println("3: Extra Syrup ($0.50)");
                 System.out.println("0: Done");
                 System.out.print("Select option: ");
                 int choice = scanner.nextInt();
