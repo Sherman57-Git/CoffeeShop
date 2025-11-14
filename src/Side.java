@@ -6,4 +6,5 @@ public class Side extends Items {
     public double calculatePrice() {
         return basePrice;
     }
+
 }
