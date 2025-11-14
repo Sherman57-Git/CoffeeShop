@@ -4,7 +4,7 @@ import java.util.List;
 public class Coffee extends Items {
     private String milkType;
     private boolean isIced;
-    private final List<AddOn> addOns = new ArrayList<>();
+    private String flavors;
     public Coffee(String name, String size, String milkType, boolean isIced, String flavors) {
         super(name, size, basePrice(size));
         this.milkType = milkType;
@@ -20,23 +20,20 @@ public class Coffee extends Items {
             default -> 5.50;
         };
     }
-    public void addAddOn (AddOn addOn) {
-        addOns.add(addOn);
-    }
     @Override
     public double calculatePrice() {
-        double total = price;
-        for (AddOn addOn : addOns) {
-            total += addOn.getPrice();
-        }
+        double total = basePrice;
         if (isIced) total += 0.50;
         return total;
     }
     @Override
     public String getDescription() {
         StringBuilder desc = new StringBuilder(super.getDescription())
-                .append(" (").append(milkType)
-                .append(isIced ? ", Iced" : "").append(")");
+                .append(" (")
+                .append(milkType);
+        if (isIced) desc.append(", Iced");
+        if (!flavors.equalsIgnoreCase("none")) desc.append(", ").append(flavors);
+        desc.append(")");
         if (!addOns.isEmpty()) {
             desc.append(" + ").append(addOns);
         }

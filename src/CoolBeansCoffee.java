@@ -13,8 +13,8 @@ public class CoolBeansCoffee {
             switch (choice) {
                 case 1 -> {
                     Order order = new Order();
-                    OrderScreen orderSrceen = new OrderScreen(order);
-                    orderSrceen.start();
+                    OrderScreen orderScreen = new OrderScreen(order);
+                    orderScreen.start();
                 }
                 case 0 -> {
                     System.out.println("Thank You! Goodbye!");

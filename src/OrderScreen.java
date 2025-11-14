@@ -12,7 +12,7 @@ public class OrderScreen {
         while(ordering) {
             System.out.println("~~~~ Order ~~~~ ");
             System.out.println("1: Want some Coffee?");
-            System.out.println("2: No coffee? how about some other drinks? ");
+            System.out.println("2: No coffee? How about some other drinks? ");
             System.out.println("3: Would you like some pastries as well? ");
             System.out.println("4: Ready to Check out? ");
             System.out.println("0: Cancel Order" );
@@ -30,7 +30,7 @@ public class OrderScreen {
                     ordering = false;
                 }
 
-                default -> throw new IllegalStateException("Unexpected value: " + choice);
+                default -> System.out.println("Whoops, I don't think that's gonna work. Lets try that again!");
             }
         }
     }
@@ -40,11 +40,11 @@ public class OrderScreen {
         System.out.println(" What kind of coffee would you like? Latte or Cappuccino? ");
         String name = scanner.nextLine();
         System.out.println("What size would you like for your coffee? Small, Medium or Large?");
-        String size = scanner.next();
-        System.out.println("Any Flavor syrups? Vanilla,Hazelnut,Caramel,BananaBread,Pumpkin Spice");
-        String flavors = scanner.next();
+        String size = scanner.nextLine();
+        System.out.println("Any Flavor syrups? Vanilla, Hazelnut, Caramel, Banana Bread, Pumpkin Spice");
+        String flavors = scanner.nextLine();
         System.out.println("What milk would you like? We have Oat, Almond, Coconut and Whole milk.");
-        String milk = scanner.next();
+        String milk = scanner.nextLine();
         System.out.println("Would you like it iced (y/n): ");
         boolean iced = scanner.nextLine().equalsIgnoreCase("y");
         Coffee coffee = new Coffee(name ,size, milk ,iced, flavors);
@@ -70,6 +70,8 @@ public class OrderScreen {
                 }
             }
         }
+        order.addItem(coffee);
+        System.out.println("Added " + coffee.getDescription());
 
     }// ADDING DRINKS
     private void addDrink() {
@@ -79,9 +81,9 @@ public class OrderScreen {
         System.out.println("What size would you like for your Drink? Small, Medium or Large?");
         String size = scanner.nextLine();
         System.out.println("Any Flavor syrups? Vanilla,Hazelnut,Caramel,BananaBread,Pumpkin Spice");
-        String flavors = scanner.next();
+        String flavors = scanner.nextLine();
         System.out.println("What milk would you like? We have Oat, Almond, Coconut and Whole milk.");
-        String milk = scanner.next();
+        String milk = scanner.nextLine();
         System.out.println("Would you like it iced (y/n): ");
         boolean iced = scanner.nextLine().equalsIgnoreCase("y");
         Drink drink = new Drink(name, size, milk, flavors);

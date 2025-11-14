@@ -1,33 +1,57 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public abstract class Items {
     protected String name;
     protected String size;
     protected double basePrice;
-    protected List<AddOn> addOn;
+    protected List<AddOn> addOns;
 
     public Items(String name, String size, double basePrice) {
         this.name = name;
         this.size = size;
         this.basePrice = basePrice;
-        this.addOn = new ArrayList<>();
+        this.addOns = new ArrayList<>();
     }
     public void addAddOn(AddOn addOn) {
-        this.addOn.add(addOn);
+        this.addOns.add(addOn);
     }
     //Gets the total cost of add ons
     public double addOnTotal() {
-        return addOn.stream()
+        return addOns.stream()
                 .mapToDouble(AddOn::getPrice)
                 .sum();
     }
-
     public abstract double calculatePrice();
     public String getDescription(){
-        return size + "  " + name;
+        StringBuilder desc = new StringBuilder(size + "  " + name);
+        if (!addOns.isEmpty()) {
+            String addOnNames = addOns.stream()
+                    .map(AddOn::getName)
+                    .collect(Collectors.joining(", "));
+            desc.append(" + ").append(addOns);
+        }
+        return desc.toString();
     }
 
-    public void add(int i, List<Items> items) {
+    public String getName() {
+        return name;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public double getBasePrice() {
+        return basePrice;
+    }
+
+    public List<AddOn> getAddOn() {
+        return addOns;
+    }
+
+    public void AddOn(int i, Items items) {
     }
 }
+
