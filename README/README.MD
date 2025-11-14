@@ -25,7 +25,87 @@
 ### Receive a nicely formatted printed receipt
 
 ### Have receipts automatically saved in a /receipts/ folder
+# OOP Concepts Used
+## Inheritance
 
+## Used when:
+
+### Coffee class
+
+### Drink class
+
+### Side class
+
+# Inherited from the parent class Items
+
+### Items is an abstract class, requiring subclasses to implement their own calculatePrice() method.
+
+# Polymorphism
+
+## Order stores:
+
+## List<Items> items
+## This allows Coffee, Drink, or Side objects to be handled the same way.
+
+Encapsulation
+
+Fields like:
+
+private String name;
+
+
+are hidden and accessed only through getters and methods like addAddOn().
+
+File I/O
+
+Receipt.save() writes a receipt file using:
+
+FileWriter writer
+
+
+Saved inside a /receipts folder.
+
+Lists & Streams
+
+Add-on totals use Streams:
+
+addOns.stream().mapToDouble(AddOn::getPrice).sum();
+
+# 🎯 Features
+### ✔ Coffee Customization
+
+### Size (small, medium, large)
+
+### Milk: oat, almond, coconut, whole
+
+# Flavors
+
+## Iced options
+
+## Add-ons (foam, syrup, whipped cream)
+
+# ✔ Additional Drinks
+
+### Matcha
+
+### Hot Chocolate
+
+# Optional add-ons
+
+### ✔ Pastries
+
+### Croissants
+
+### Muffins
+
+### Cookies
+
+# ✔ Receipt Generation
+
+### Automatically saved to /receipts/
+
+### Timestamped
+### Centered text formatting
 ## Folder Structure
 ![Folders:classes.jpg](../../Capstone%201/Screenshot/Folders%3Aclasses.jpg)
 CoolBeansCoffee/
@@ -49,11 +129,7 @@ CoolBeansCoffee/
 ![img.png](img.png)
 
 ## My Favorite code for this cafe is 
-private static String center(String text, int width) {
-int padding = (width - text.length()) / 2;
-return " ".repeat(Math.max(0, padding)) + text;
-}
- Which centers my string for a fancier-looking receipt 
+
 
 # Conclusion 
 Made by Sherman Turner-Robinson

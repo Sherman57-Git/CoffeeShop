@@ -24,6 +24,7 @@ public abstract class Items {
                 .sum();
     }
     public abstract double calculatePrice();
+
     public String getDescription(){
         StringBuilder desc = new StringBuilder(size + "  " + name);
         if (!addOns.isEmpty()) {
