@@ -15,7 +15,7 @@ public class OrderScreen {
             System.out.println("2: No coffee? How about some other drinks? ");
             System.out.println("3: Would you like some pastries as well? ");
             System.out.println("4: Ready to Check out? ");
-            System.out.println("0: Cancel Order" );
+            System.out.println("0: Nah I'm all good" );
             System.out.println("What would you like to do today?: ");
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -113,7 +113,7 @@ public class OrderScreen {
         System.out.println("Added: " + drink.getDescription());
     }
     private void addSide() {
-        System.out.println("~~~ Yummy Baked goods ~~~");
+        System.out.println("~~~ OOOH Yeah! Baked Goods! ~~~");
         System.out.println("We have Croissants, Blueberry Muffins, Cookies. What would you like?:");
         String name = scanner.nextLine();
         Side side = new Side(name);

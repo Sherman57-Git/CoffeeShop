@@ -1,7 +1,0 @@
-Cool Beans Coffee
-~~~~~~~~~~~~~~~~~~~~~~~
-Order Summary:
-- Latte   (oat, Iced, vanilla) : $6.00
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Total: $6.00
-Date: 2025-11-14T00:33:15.610727

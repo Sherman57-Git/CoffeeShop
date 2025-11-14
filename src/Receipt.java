@@ -16,14 +16,14 @@ public class Receipt {
                 String fileName = "receipts/" + time + ".txt";
                 FileWriter writer = new FileWriter(fileName);
                 writer.write(center("COOL BEANS COFFEE", 30) + "\n");
-                writer.write(center("------------------------------", 30) + "\n\n");
+                writer.write(center("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~", 30) + "\n\n");
                 writer.write(order.getOrderSummary() + "\n");
-                writer.write("\n------------------------------\n");
+                writer.write("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
                 writer.write("Date: " + LocalDateTime.now()
                         .format(DateTimeFormatter.ofPattern("MMMM dd, yyyy")) + "\n");
                 writer.write("Time: " + LocalDateTime.now()
                         .format(DateTimeFormatter.ofPattern("hh:mm a")) + "\n");
-                writer.write("------------------------------\n");
+                writer.write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
                 writer.write(center("THANK YOU FOR YOUR ORDER!", 30) + "\n");
                 writer.close();
                 System.out.println("Receipt saved as: " + fileName);

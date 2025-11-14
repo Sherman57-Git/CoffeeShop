@@ -1,7 +1,7 @@
 public class Coffee extends Items {
-    private String milkType;
-    private boolean isIced;
-    private String flavors;
+    private final String milkType;
+    private final boolean isIced;
+    private final String flavors;
     public Coffee(String name, String size, String milkType, boolean isIced, String flavors) {
         super(name, size, basePrice(size));
         this.milkType = milkType;
@@ -31,9 +31,6 @@ public class Coffee extends Items {
         if (isIced) desc.append(", Iced");
         if (!flavors.equalsIgnoreCase("none")) desc.append(", ").append(flavors);
         desc.append(")");
-        if (!addOns.isEmpty()) {
-            desc.append(" + ").append(addOns);
-        }
         return desc.toString();
     }
 
