@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Coffee extends Items {
     private String milkType;
     private boolean isIced;
@@ -39,4 +36,5 @@ public class Coffee extends Items {
         }
         return desc.toString();
     }
+
 }

@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Drink extends Items {
     private final String milk;
     public Drink(String name, String size, String milk) {
@@ -33,4 +30,5 @@ public class Drink extends Items {
                     .append(")");
             return desc.toString();
         }
+
     }
