@@ -1,0 +1,10 @@
+Cool Beans Coffee
+~~~~~~~~~~~~~~~~~~~~~~~
+Order Summary:
+- Medium  Matcha (Oat) : $6.00
+- Large  Latte + [Vanilla Cold Foam ($1.00)] (Oat, Iced, Pumpkin spice) + [Vanilla Cold Foam ($1.00)] : $7.00
+- Regular  cookie : $1.50
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total: $14.50
+
+Date: 2025-11-13-16:40:01

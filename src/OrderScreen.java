@@ -39,11 +39,11 @@ public class OrderScreen {
         System.out.println("~~~ Coffee ~~~");
         System.out.println(" What kind of coffee would you like? Latte or Cappuccino? ");
         String name = scanner.nextLine();
-        System.out.println("What size would you like for your coffee? Small, Medium or Large?");
+        System.out.println("What size would you like for your coffee? Small/ Medium/ Large?");
         String size = scanner.nextLine();
         System.out.println("Any Flavor syrups? Vanilla, Hazelnut, Caramel, Banana Bread, Pumpkin Spice");
         String flavors = scanner.nextLine();
-        System.out.println("What milk would you like? We have Oat, Almond, Coconut and Whole milk.");
+        System.out.println("What milk would you like? We have Oat/ Almond/ Coconut/ Whole milk");
         String milk = scanner.nextLine();
         System.out.println("Would you like it iced (y/n): ");
         boolean iced = scanner.nextLine().equalsIgnoreCase("y");
@@ -78,15 +78,15 @@ public class OrderScreen {
         System.out.println("~~~ Drinks ~~~");
         System.out.println(" Would you like to get a Matcha or Hot chocolate?: ");
         String name = scanner.nextLine();
-        System.out.println("What size would you like for your Drink? Small, Medium or Large?");
+        System.out.println("What size would you like for your Drink? Small/ Medium/ Large?");
         String size = scanner.nextLine();
-        System.out.println("Any Flavor syrups? Vanilla,Hazelnut,Caramel,BananaBread,Pumpkin Spice");
+        System.out.println("Any Flavor syrups? Vanilla, Hazelnut, Caramel, Banana Bread, Pumpkin Spice");
         String flavors = scanner.nextLine();
-        System.out.println("What milk would you like? We have Oat, Almond, Coconut and Whole milk.");
+        System.out.println("What milk would you like? We have Oat/ Almond/ Coconut/ Whole milk.");
         String milk = scanner.nextLine();
         System.out.println("Would you like it iced (y/n): ");
         boolean iced = scanner.nextLine().equalsIgnoreCase("y");
-        Drink drink = new Drink(name, size, milk, flavors);
+        Drink drink = new Drink(name, size, milk);
         //Add ons for drinks
         System.out.print("Would you like to add extra add-ons? (y/n): ");
         if (scanner.nextLine().equalsIgnoreCase("y")) {

@@ -34,24 +34,5 @@ public abstract class Items {
         }
         return desc.toString();
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getSize() {
-        return size;
-    }
-
-    public double getBasePrice() {
-        return basePrice;
-    }
-
-    public List<AddOn> getAddOn() {
-        return addOns;
-    }
-
-    public void AddOn(int i, Items items) {
-    }
 }
 

@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Drink extends Items {
-    private final String flavors;
-    public Drink(String name, String size, String milk, String flavors) {
+    private final String milk;
+    public Drink(String name, String size, String milk) {
         super(name, size, basePrice(size));
-        this.flavors = flavors;
         this.milk = milk;
+
     }
 
     private static double basePrice(String size) {
@@ -28,7 +28,9 @@ public class Drink extends Items {
         @Override
         public String getDescription() {
             StringBuilder desc = new StringBuilder(super.getDescription())
-                    .append(" (").append(flavors).append(")");
+                    .append(" (")
+                    .append(milk)
+                    .append(")");
             return desc.toString();
         }
     }

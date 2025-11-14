@@ -9,7 +9,7 @@ public class Receipt {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH:mm:ss");
         String timestamp = LocalDateTime.now().format(formatter);
         String directoryPath = "receipts";
-        String fileName = directoryPath + "/" + timestamp + ".txt";
+        String fileName = directoryPath + "/" + timestamp + "receipts/.txt";
         try {
             File directory = new File(directoryPath);
             if(!directory.exists()) {
