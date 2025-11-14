@@ -1,3 +1,5 @@
+package main;
+
 public class AddOn {
     private final String name;
     private final double price;

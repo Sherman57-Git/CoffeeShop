@@ -1,3 +1,5 @@
+package main;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -33,7 +35,7 @@ public class Receipt {
                 //Footer
                 writer.write(center("THANK YOU FOR YOUR ORDER!", 30) + "\n");
                 writer.close();
-                System.out.println("Receipt saved as: " + fileName);
+                System.out.println("main.Receipt saved as: " + fileName);
             } catch (IOException e) {
                 System.out.println("Error saving receipt: " + e.getMessage());
             }

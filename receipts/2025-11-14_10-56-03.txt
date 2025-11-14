@@ -1,7 +1,7 @@
       COOL BEANS COFFEE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Order Summary:
+main.Order Summary:
 - Small  Latte (Oat, Iced, Vanilla) : $5.50
 - Medium  Matcha + [Whipped Cream ($1.00)] (Oat) : $7.00
 - Regular  Cookies : $1.50

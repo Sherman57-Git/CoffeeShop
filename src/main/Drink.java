@@ -1,3 +1,5 @@
+package main;
+
 public class Drink extends Items {
     private final String milk;
     public Drink(String name, String size, String milk) {

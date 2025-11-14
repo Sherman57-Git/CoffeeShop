@@ -1,7 +1,7 @@
       COOL BEANS COFFEE
 ------------------------------
 
-Order Summary:
+main.Order Summary:
 - small  Latte + [Vanilla Cold Foam ($1.00), Extra Syrup ($0.50), Extra Syrup ($0.50)] (oat, Iced, Vanilla) + [Vanilla Cold Foam ($1.00), Extra Syrup ($0.50), Extra Syrup ($0.50)] : $5.50
 - Regular  Blueberry Muffins : $1.50
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

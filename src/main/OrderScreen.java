@@ -1,3 +1,5 @@
+package main;
+
 import java.util.Scanner;
 
 public class OrderScreen {
@@ -10,8 +12,8 @@ public class OrderScreen {
         boolean ordering = true;
 
         while(ordering) {
-            System.out.println("~~~~ Order ~~~~ ");
-            System.out.println("1: Want some Coffee?");
+            System.out.println("~~~~ main.Order ~~~~ ");
+            System.out.println("1: Want some main.Coffee?");
             System.out.println("2: No coffee? How about some other drinks? ");
             System.out.println("3: Would you like some pastries as well? ");
             System.out.println("4: Ready to Check out? ");
@@ -36,7 +38,7 @@ public class OrderScreen {
     }
     // ADDING COFFEE
     private void addCoffee() {
-        System.out.println("~~~ Coffee ~~~");
+        System.out.println("~~~ main.Coffee ~~~");
         System.out.println(" What kind of coffee would you like? Latte or Cappuccino? ");
         String name = scanner.nextLine();
         System.out.println("What size would you like for your coffee? Small/ Medium/ Large?");
@@ -78,7 +80,7 @@ public class OrderScreen {
         System.out.println("~~~ Drinks ~~~");
         System.out.println(" Would you like to get a Matcha or Hot chocolate?: ");
         String name = scanner.nextLine();
-        System.out.println("What size would you like for your Drink? Small/ Medium/ Large?");
+        System.out.println("What size would you like for your main.Drink? Small/ Medium/ Large?");
         String size = scanner.nextLine();
         System.out.println("Any Flavor syrups? Vanilla, Hazelnut, Caramel, Banana Bread, Pumpkin Spice");
         String flavors = scanner.nextLine();

@@ -1,11 +1,13 @@
+package main;
+
 import java.util.Scanner;
 
 public class CoolBeansCoffee {
     private static final Scanner scanner = new Scanner(System.in);
     static void main(String[] args) {
         while (true) {
-            System.out.println("~~~~~Cool beans Coffee~~~~~");
-            System.out.println("1: New Order");
+            System.out.println("~~~~~Cool beans main.Coffee~~~~~");
+            System.out.println("1: New main.Order");
             System.out.println("0: Exit");
             System.out.println("What would you like to do?☕:  ");
             int choice = scanner.nextInt();

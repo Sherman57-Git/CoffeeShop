@@ -1,3 +1,7 @@
+package Test;
+
+import main.Side;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -8,7 +12,7 @@ class SideTest {
     @Test
     void testCalculatePrice() {
         Side side = new Side("Blueberry Muffin");
-        assertEquals(1.50, side.calculatePrice(), 0.01);
+        Assertions.assertEquals(1.50, side.calculatePrice(), 0.01);
     }
     @Test
     void testDescription() {

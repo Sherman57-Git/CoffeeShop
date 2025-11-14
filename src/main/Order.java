@@ -1,3 +1,5 @@
+package main;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +16,7 @@ public class Order {
           return total;
       }
       public String getOrderSummary() {
-          StringBuilder sb = new StringBuilder("Order Summary:\n");
+          StringBuilder sb = new StringBuilder("main.Order Summary:\n");
           for (Items items : items ) {
               sb.append("- ")
                       .append(items.getDescription())

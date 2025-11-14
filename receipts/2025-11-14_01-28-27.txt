@@ -1,7 +1,7 @@
       COOL BEANS COFFEE
 ------------------------------
 
-Order Summary:
+main.Order Summary:
 - small  latte (oat, Iced, vanilla) : $5.50
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Total: $5.50

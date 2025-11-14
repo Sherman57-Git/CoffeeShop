@@ -12,7 +12,7 @@
 
 # About the Project
 
-## Cool Beans Coffee is a Java console-based Point-of-Sale (POS) system for a custom coffee shop.
+## Cool Beans main.Coffee is a Java console-based Point-of-Sale (POS) system for a custom coffee shop.
 
 ## Customize drinks
 
@@ -30,22 +30,22 @@
 
 ## Used when:
 
-### Coffee class
+### main.Coffee class
 
-### Drink class
+### main.Drink class
 
-### Side class
+### main.Side class
 
-# Inherited from the parent class Items
+# Inherited from the parent class main.Items
 
-### Items is an abstract class, requiring subclasses to implement their own calculatePrice() method.
+### main.Items is an abstract class, requiring subclasses to implement their own calculatePrice() method.
 
 # Polymorphism
 
-## Order stores:
+## main.Order stores:
 
-## List<Items> items
-## This allows Coffee, Drink, or Side objects to be handled the same way.
+## List<main.Items> items
+## This allows main.Coffee, main.Drink, or main.Side objects to be handled the same way.
 
 Encapsulation
 
@@ -58,7 +58,7 @@ are hidden and accessed only through getters and methods like addAddOn().
 
 File I/O
 
-Receipt.save() writes a receipt file using:
+main.Receipt.save() writes a receipt file using:
 
 FileWriter writer
 
@@ -69,10 +69,10 @@ Lists & Streams
 
 Add-on totals use Streams:
 
-addOns.stream().mapToDouble(AddOn::getPrice).sum();
+addOns.stream().mapToDouble(main.AddOn::getPrice).sum();
 
 # 🎯 Features
-### ✔ Coffee Customization
+### ✔ main.Coffee Customization
 
 ### Size (small, medium, large)
 
@@ -100,33 +100,19 @@ addOns.stream().mapToDouble(AddOn::getPrice).sum();
 
 ### Cookies
 
-# ✔ Receipt Generation
+# ✔ main.Receipt Generation
 
 ### Automatically saved to /receipts/
 
 ### Timestamped
+
 ### Centered text formatting
-## Folder Structure
-![Folders:classes.jpg](../../Capstone%201/Screenshot/Folders%3Aclasses.jpg)
-CoolBeansCoffee/
-│
-├── AddOn.java
-├── Coffee.java
-├── CoolBeansCoffee.java
-├── Drink.java
-├── Items.java
-├── Order.java
-├── OrderScreen.java
-├── Receipt.java
-├── Side.java
-│
-└── receipts/
-└── <timestamp>.txt
+
 ## Screenshots
-![CBC receipt.jpg](../../Capstone%201/Screenshot/CBC%20receipt.jpg)
+![CBC receipt.jpg](README/cap2.jpg)
 
 ## UML Diagram
-![img.png](img.png)
+![img.png](README/img.png)
 
 ## My Favorite code for this cafe is 
 
@@ -134,4 +120,4 @@ CoolBeansCoffee/
 # Conclusion 
 Made by Sherman Turner-Robinson
 Thanks for stopping by my shop! ☕ :)
-If you have ideas to make Cool Beans Coffee even tastier, feel free to share.
+If you have ideas to make Cool Beans main.Coffee even tastier, feel free to share.

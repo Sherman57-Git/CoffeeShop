@@ -1,3 +1,5 @@
+package main;
+
 public class Coffee extends Items {
     private final String milkType;
     private final boolean isIced;
