@@ -1,0 +1,15 @@
+      COOL BEANS COFFEE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+main.Order Summary:
+- Large  Latte + [Vanilla Cold Foam ($1.00), Vanilla Cold Foam ($1.00)] (coconut, Iced, banana brea) : $7.00
+- Regular  Crissants : $1.50
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total: $8.50
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Date: November 14, 2025
+Time: 02:48 PM
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  THANK YOU FOR YOUR ORDER!

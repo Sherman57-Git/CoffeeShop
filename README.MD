@@ -1,15 +1,5 @@
 # Hello, Welcome to my CoolBeans README☕☕
 
-# 📚 Table of Contents
-### About the Project
-### Features
-### Getting Started
-### Folder Structure
-### Code Examples
-### Images
-### Markdown Reference
-### Contributing
-
 # About the Project
 
 ## Cool Beans main.Coffee is a Java console-based Point-of-Sale (POS) system for a custom coffee shop.
@@ -90,7 +80,7 @@ addOns.stream().mapToDouble(main.AddOn::getPrice).sum();
 
 ### Hot Chocolate
 
-# Optional add-ons
+# Optional Sides
 
 ### ✔ Pastries
 
@@ -109,14 +99,15 @@ addOns.stream().mapToDouble(main.AddOn::getPrice).sum();
 ### Centered text formatting
 
 ## Screenshots
-![CBC receipt.jpg](README/cap2.jpg)
+![cap3.jpg](README/cap3.jpg)
 
 ## UML Diagram
 ![img.png](README/img.png)
 
 ## My Favorite code for this cafe is 
+![cap4.jpg](README/cap4.jpg)
 
-
+### I loved making this coffee Shop and would love to make a shop someday
 # Conclusion 
 Made by Sherman Turner-Robinson
 Thanks for stopping by my shop! ☕ :)

@@ -10,7 +10,6 @@ public class OrderScreen {
     }
     public void start(){
         boolean ordering = true;
-
         while(ordering) {
             System.out.println("~~~~ main.Order ~~~~ ");
             System.out.println("1: Want some main.Coffee?");
@@ -31,7 +30,6 @@ public class OrderScreen {
                     System.out.println("Canceling order. Let's try that again!");
                     ordering = false;
                 }
-
                 default -> System.out.println("Whoops, I don't think that's gonna work. Lets try that again!");
             }
         }
